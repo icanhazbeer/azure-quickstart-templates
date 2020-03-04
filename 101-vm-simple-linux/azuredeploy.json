@@ -66,7 +66,22 @@
             "metadata": {
                 "description": "The size of the VM"
             }
-        },
+        }, 
+        "vNetNewOrExisting": {
+           "type": "string",
+           "defaultValue": "new",
+           "allowedValues": [ "new", "existing" ],
+        "metadata": {
+        "description": "Choose to create a new Virtual Network or use an existing one. If choosing an existing network, the subnet also needs to exist."
+           }
+        },        
+        "vNetExistingResourceGroup": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+            "description": "The name of the resource group for the existing Virtual Network. Required when using an existing Virtual Network"
+           }
+        },        
         "virtualNetworkName": {
             "type": "string",
             "defaultValue": "vNet",
