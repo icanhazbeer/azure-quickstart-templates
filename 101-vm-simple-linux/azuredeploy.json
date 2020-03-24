@@ -216,7 +216,7 @@
           #  "sku": {
          #       "name": "Basic",
           #      "tier": "Regional"
-            #}
+            ##}
         },
         {
             "type": "Microsoft.Compute/virtualMachines",
