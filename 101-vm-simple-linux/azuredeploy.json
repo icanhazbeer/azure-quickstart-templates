@@ -200,19 +200,19 @@
                 ]
             }
         },
-        {
-            "type": "Microsoft.Network/publicIpAddresses",
-            "apiVersion": "2019-02-01",
-            "name": "[variables('publicIpAddressName')]",
-            "location": "[parameters('location')]",
-            "properties": {
-                "publicIpAllocationMethod": "Dynamic",
-                "publicIPAddressVersion": "IPv4",
-                "dnsSettings": {
-                    "domainNameLabel": "[parameters('dnsLabelPrefix')]"
-                },
-                "idleTimeoutInMinutes": 4
-            },
+      #  {
+     #       "type": "Microsoft.Network/publicIpAddresses",
+     #       "apiVersion": "2019-02-01",
+      #      "name": "[variables('publicIpAddressName')]",
+      #      "location": "[parameters('location')]",
+       #     "properties": {
+         #       "publicIpAllocationMethod": "Dynamic",
+           #     "publicIPAddressVersion": "IPv4",
+            #    "dnsSettings": {
+          #          "domainNameLabel": "[parameters('dnsLabelPrefix')]"
+              #  },
+         #       "idleTimeoutInMinutes": 4
+         #   },
           #  "sku": {
          #       "name": "Basic",
           #      "tier": "Regional"
@@ -271,7 +271,7 @@
         },
         "sshCommand": {
             "type": "string",
-            "value": "[concat('ssh ', parameters('adminUsername'), '@', reference(variables('publicIPAddressName')).dnsSettings.fqdn)]"
+            "value": "[concat('ssh ', parameters('adminUsername'), ]" #reference(variables('publicIPAddressName')).dnsSettings.fqdn)
         }
     }
 }
