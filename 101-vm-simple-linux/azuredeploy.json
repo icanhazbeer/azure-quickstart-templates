@@ -213,9 +213,9 @@
                 },
                 "idleTimeoutInMinutes": 4
             },
-            "sku": {
-                "name": "Basic",
-                "tier": "Regional"
+          #  "sku": {
+         #       "name": "Basic",
+          #      "tier": "Regional"
             }
         },
         {
