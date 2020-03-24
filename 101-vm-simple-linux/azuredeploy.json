@@ -145,7 +145,7 @@
                             "privateIPAllocationMethod": "Dynamic"
                           #  "publicIpAddress": {
                            #     "id": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))]"
-                            }
+                          #  }
                         }
                     }
                 ],
